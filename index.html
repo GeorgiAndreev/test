@@ -1,1 +1,256 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jivko and Joro House</title>
+<style type="text/css">
+header, section, footer, aside, nav, article, figure, figcaption {
+	display: block;
+}
+
+body {
+	color: #666666;
+	background-color: #f9f8f6;
+	background-image: url("images/stars-background.jpg");
+	background-position: center;
+	font-family: Georgia, Times, serif;
+	line-height: 1.4em;
+	margin: 0px;
+}
+
+.wrapper {
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: #ffff00;
+}
+
+header {
+	color: #ffff00;
+	height: 160px;
+	background-image: url(images/header.png);
+}
+
+h1 {
+	text-indent: -9999px;
+	width: 940px;
+	height: 130px;
+	margin: 0px;
+}
+
+nav, footer {
+	clear: both;
+	color: #ffffff;
+	background-color: #00BFFF;
+	height: 30px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+}
+
+nav li {
+	display: inline;
+	margin-right: 30px;
+}
+
+nav li a {
+	color: #ffffff;
+}
+
+nav li a:hover, nav li a.current {
+	color: #696969;
+}
+
+section.about-the-center {
+	float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;
+}
+
+article {
+	clear: both;
+	overflow: auto;
+	width: 100%;
+}
+
+hgroup {
+	margin-top: 40px;
+}
+
+figure.smiling-cat {
+	margin: 30px 30px 0px 30px;
+}
+
+figure.mandala-tree {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+
+figure {
+	float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 0px 0px 0px 30px;
+}
+
+figcaption {
+	font-size: 90%;
+	text-align: left;
+}
+
+aside {
+	width: 230px;
+	float: left;
+	padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+	color: #985d6a;
+	background-color: #efefef;
+}
+
+a {
+	color: #de6581;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h2 {
+	color: #de6581;
+	margin: 30px 0px 5px 0px;
+	padding: 0px;
+	margin: 30px 0px 5px 0px;
+}
+
+h3 {
+	margin: 0px 0px 10px 0px;
+	color: #de6581;
+}
+
+aside h2 {
+	padding: 10px 0px 0px 0px;
+	color: #de6581;
+}
+
+footer {
+	font-size: 80%;
+	padding: 7px 0px 0px 20px;
+}
+
+form {
+	margin: 20px 0px 0px 0px;
+}
+
+button {
+	margin: 20px 10px 10px 40px;
+}
+
+ #container {width:300px; margin:0 auto;}
+ 
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+ 
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
+</style>
+
+<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Jivko and Joro House</h1>
+			<nav>
+				<ul>
+					<li><a href="about-the-center.html">ABOUT THE CENTER</a></li>
+					<li><a href="upcoming-events.html">UPCOMING EVENTS</a></li>
+					<li><a href="schedule.html">SCHEDULE</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="eshop.html">ESHOP</a></li>
+					<li><a href="login.html" class="current">LOGIN</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="about-the-center">
+		
+	<div id="container">
+            <form>
+                <h1>Create Logon</h1>
+                <div class="line"><label for="username">Username *: </label><input type="text" id="username" /></div>
+                <div class="line"><label for="pwd">Password *: </label><input type="password" id="pwd" /></div>
+                <!-- You may want to consider adding a "confirm" password box also -->
+                <div class="line"><label for="surname">Surname *: </label><input type="text" id="surname" /></div>
+                <div class="line"><label for="other_names">Other Names *: </label><input type="text" id="names" /></div>
+                <div class="line"><label for="dob">Date of Birth *: </label><input type="text" id="dob" /></div>
+                <div class="line"><label for="email">Email *: </label><input type="email" id="email" /></div>
+                <!-- Valid input types: http://www.w3schools.com/html5/html5_form_input_types.asp -->
+                <div class="line"><label for="tel">Telephone: </label><input type="text" id="tel" /></div>
+                <div class="line"><label for="add">Address *: </label><input type="text" id="add" /></div>
+                <div class="line"><label for="ptc">Post Code *: </label><input type="text" id="ptc" /></div>
+                <div class="line submit"><input type="submit" value="Submit" /></div>
+ 
+                <p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>
+            </form>
+        </div>
+			
+			
+			
+		</section>
+
+		<aside>
+			<section class="subscribe">
+
+				<h2>
+					Subscribe for <br> our newsletter:
+				</h2>
+				<form>
+					name:<br> <input type="text" name="username"><br>
+					email:<br> <input type="password" name="psw">
+					<button type="button">Subscribe!</button>
+				</form>
+
+			</section>
+			
+			<section class="search-for-events">
+
+				<h2>Search for events:</h2>
+				<form>
+					word to search for:<br> <input type="text" name="username"><br>
+					<button type="button">Search!</button>
+				</form>
+
+			</section>
+
+			<section class="contact-details">
+				<h2>Contact info:</h2>
+				<p>
+					Jivko and Joro House<br /> 39A Laika Street<br /> Storgoziq<br />
+					Pleven Town
+				</p>
+			</section>
+		</aside>
+		<footer> &copy; 2016 Jivko and Joro House </footer>
+	</div>
+	<!-- .wrapper -->
+</body>
+</html>
