@@ -155,6 +155,19 @@ form {
 button {
 	margin: 20px 10px 10px 40px;
 }
+
+ #container {width:300px; margin:0 auto;}
+ 
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+ 
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:right;}
 </style>
 
 <!--[if lt IE 9]>
@@ -173,54 +186,35 @@ button {
 					<li><a href="schedule.html">SCHEDULE</a></li>
 					<li><a href="gallery.html">GALLERY</a></li>
 					<li><a href="eshop.html">ESHOP</a></li>
-					<li><a href="login.html">LOGIN</a></li>
+					<li><a href="login.html" class="current">LOGIN</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section class="about-the-center">
-			<article>
-				<figure class="smiling-cat">
-					<img src="images/smile-1.png" alt="Smiling Cat" />
-					<figcaption>Feel good today...</figcaption>
-				</figure>
-				<hgroup>
-					<h2>ABOUT THE CENTER</h2>
-					<!-- <h3>And what we can do for you</h3> -->
-				</hgroup>
-				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our center is a
-					place where you can <br> come and forget about your everyday <br>
-					problems. Here you can find things to <br> do that you didn't
-					heard of before and <br> meet such people that you didn't
-					imagine exist. After spending time here you will feel recharged and
-					happier! We are dedicated to bring something new and more positive
-					in people's lifes. If you <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;want to participate
-					in interesting activities or if you are looking for a place where
-					you &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can lead such
-					activities and share with others your knowledge and experiences,
-					you are &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;welcome! We
-					are waiting for you!
-				</p>
-			</article>
-
-			<!-- Come and bring with yourself
-					who you are... And you will realize you are much more!
-				<p style="text-indent: 5em;" > -->
-
-			<article>
-				<figure>
-					<img src="images/woman-tree.png" alt="Woman Tree" />
-					<figcaption>Remember your roots...</figcaption>
-				</figure>
-
-				<figure class=mandala-tree>
-					<img src="images/green-tree.png" alt="Mandala tree" />
-					<figcaption>Express your true nature...</figcaption>
-				</figure>
-
-			</article>
+		
+	<div id="container">
+            <form>
+                <h1>Create Logon</h1>
+                <div class="line"><label for="username">Username *: </label><input type="text" id="username" /></div>
+                <div class="line"><label for="pwd">Password *: </label><input type="password" id="pwd" /></div>
+                <!-- You may want to consider adding a "confirm" password box also -->
+                <div class="line"><label for="surname">Surname *: </label><input type="text" id="surname" /></div>
+                <div class="line"><label for="other_names">Other Names *: </label><input type="text" id="names" /></div>
+                <div class="line"><label for="dob">Date of Birth *: </label><input type="text" id="dob" /></div>
+                <div class="line"><label for="email">Email *: </label><input type="email" id="email" /></div>
+                <!-- Valid input types: http://www.w3schools.com/html5/html5_form_input_types.asp -->
+                <div class="line"><label for="tel">Telephone: </label><input type="text" id="tel" /></div>
+                <div class="line"><label for="add">Address *: </label><input type="text" id="add" /></div>
+                <div class="line"><label for="ptc">Post Code *: </label><input type="text" id="ptc" /></div>
+                <div class="line submit"><input type="submit" value="Submit" /></div>
+ 
+                <p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>
+            </form>
+        </div>
+			
+			
+			
 		</section>
 
 		<aside>
